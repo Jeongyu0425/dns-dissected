@@ -2,7 +2,7 @@
 A personal walkthrough of DNS basics — how domain names translate to IP addresses, how DNS servers work together, and how queries and caching speed things up. Written in my own words with analogies for easier understanding.
 
 
-## **Section 1: DNS Basics & Purpose**
+## 🧠 **Section 1: DNS Basics & Purpose**
 
 **DNS** helps humans when entering a domain name by converting it into an **IP address**, which is more machine-friendly. It means we don’t have to memorize long or complex IP addresses every time we want to visit a website. We just type the **domain name**, and DNS handles the rest.
 
@@ -13,7 +13,7 @@ The **domain name** is easier for humans to understand and remember, and the **I
 It’s compared to a **phonebook** because it helps find the exact address (**IP**) of a website based on its name. Just like how you’d look up someone’s phone number by their name, **DNS** lets your browser look up the **IP address** of a **domain name** so the site can load.
 
 
-## **Section 2: DNS Server Types & Resolution Process**
+## 🛠️ **Section 2: DNS Server Types & Resolution Process**
 
 There are four main **DNS servers** involved in a query: the **DNS Recursor**, the **Root Name Server**, the **TLD Name Server**, and the **Authoritative Name Server**. These servers work together to get the correct **IP address** for a **domain name**.
 
@@ -26,7 +26,7 @@ The **TLD Name Server** helps narrow it down further. It’s like going to the r
 The **Authoritative Name Server** is the final stop. It’s like the dictionary that gives the exact **IP address** for the **domain** you’re trying to reach. Once the **DNS Recursor** gets this info, it returns it to the client so the browser can load the site.
 
 
-## **Section 3: DNS Queries and Caching**
+## 🔁 **Section 3: DNS Queries and Caching**
 
 Clients send **queries** to **DNS servers** to get the **IP address** that matches a **domain name**. There are three types of queries: **non-recursive**, **recursive**, and **iterative**.
 
@@ -42,5 +42,3 @@ An **iterative query** is more like walking down the street and asking people fo
 Each time you ask someone in that process — just asking if they know — that’s a **non-recursive query**.
 
 **Caching** also plays a big role in speeding things up. **DNS caching** is like a memory shortcut. Instead of going through the whole lookup process every time, the system checks to see if it already knows the answer. First, the **browser** checks its own **DNS cache**. If it’s not there, it checks the **operating system’s cache**. If it’s still not found, then it asks the **DNS servers**. This helps avoid unnecessary steps and makes the whole process faster.
-
----
